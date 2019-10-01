@@ -17,10 +17,8 @@ You are provided with billing and accounting API stubs (contained in `Spec.fs`):
     2. `getCustomers() : string list` returns JSON list of customers in Billing
 
 You have to implement syncing customers from Billing to Accounting (`Client.fs`) according to these rules:
-    
-    1. For every customer in Billing create **two** customers in Accounting: one named exactly as in Billing, another - with added "(Prepaid)" in the end, e.g. "Charlie Corporation (Prepaid)"
-    
-    2. If customer already exists in Accounting, but name has been changed in Billing, it has to be updated in Accounting. 
+1. For every customer in Billing create **two** customers in Accounting: one named exactly as in Billing, another – with added "(Prepaid)" in the end, e.g. "Charlie Corporation (Prepaid)"
+2. If customer already exists in Accounting, but name has been changed in Billing, it has to be updated in Accounting. 
 
 ### (Optional) Peer review
 
