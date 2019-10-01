@@ -26,4 +26,4 @@ As before, it is highly recommended to do some code review for your classmates a
 
 ### (Optional) Analyze dependencies
 
-Again, dependencies analysis is especially crucial at these early stages of your deep dive into OOD. This time try not only to find dependencies, but also classify them: do you think you can group dependencies according to some criteria? Do you see any typical *responsibilities* in your code? Can you split all dependencies and components (types, functions, modules) into some *abstraction levels*? Try to analyze these issues and their influence on maintenance and evolution of you code. 
+Again, dependencies analysis is especially crucial at these early stages of your deep dive into OOD. This time try not only to find dependencies, but also classify them: do you think you can group dependencies according to some criteria? Do you see any typical *responsibilities* in your code? Can you split all dependencies and components (types, functions, modules) into some *abstraction levels*? Try to analyze these issues and their influence on maintenance and evolution of your code. 
