@@ -8,7 +8,7 @@ Implement customers sync for accounting app.
 
 You are provided with billing and accounting API stubs (contained in `Spec.fs`):
  - `AccountingStub` module:
-    1. `type Customer = { Id : int option; DisplayName : string }`
+    1. `type Customer = { Id : int option; DisplayName : string; BillingId : int option }`
     2. `getCustomers() : string list` returns JSON list of customers in Accounting
     3. `addCustomer (json: string) : int` tries to add customer; if customer with given name exists, throws an exception, otherwise creates customer and returns assigned ID
     4. `updateCustomer (json: string) : unit` tries to update customer; if customer does not exist or provided name is taken, throws an exception, otherwise updates customer.
@@ -17,12 +17,10 @@ You are provided with billing and accounting API stubs (contained in `Spec.fs`):
     2. `getCustomers() : string list` returns JSON list of customers in Billing
 
 You have to implement syncing customers from Billing to Accounting (`Client.fs`) according to these rules:
+    
     1. For every customer in Billing create **two** customers in Accounting: one named exactly as in Billing, another - with added "(Prepaid)" in the end, e.g. "Charlie Corporation (Prepaid)"
+    
     2. If customer already exists in Accounting, but name has been changed in Billing, it has to be updated in Accounting. 
-
-### Implementation hint
-
-For this task you may need to save some internal state of sync process - you can use same file trick as in previous task. Since there is not much data in this case, simple JSON serialization to file will be sufficient.
 
 ### (Optional) Peer review
 
