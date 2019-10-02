@@ -6,7 +6,7 @@
 
 Implement customers sync for accounting app.
 
-You are provided with billing and accounting API stubs (contained in `Spec.fs`):
+You are provided with billing and accounting API stubs:
  - `AccountingStub` module:
     1. `type Customer = { Id : int option; DisplayName : string; BillingId : int option }`
     2. `getCustomers() : string list` returns JSON list of customers in Accounting
