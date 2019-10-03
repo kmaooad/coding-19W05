@@ -1,7 +1,8 @@
 # Coding assignment. Week 5 (2019).
 
 [![Join the chat at https://gitter.im/kmaooad/coding-19W05](https://badges.gitter.im/kmaooad/coding-19W05.svg)](https://gitter.im/kmaooad/coding-19W05?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
+<NEVER BUILT>
+ 
 ### Task
 
 Implement customers sync for accounting app.
